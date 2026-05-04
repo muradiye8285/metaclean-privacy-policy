@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://muradiye8285.github.io/metaclean-privacy-policy/sitemap.xml
