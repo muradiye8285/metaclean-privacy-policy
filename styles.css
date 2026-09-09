@@ -1,17 +1,18 @@
 :root {
   color-scheme: light;
-  --bg: #f3f4ef;
-  --bg-strong: #e7eadf;
-  --panel: rgba(255, 255, 255, 0.82);
+  --bg: #eef6fb;
+  --bg-strong: #d9eef8;
+  --panel: rgba(255, 255, 255, 0.86);
   --panel-strong: #ffffff;
-  --text: #1b1e19;
-  --muted: #5f665d;
-  --line: rgba(27, 30, 25, 0.1);
-  --accent: #174c3c;
-  --accent-soft: #dbeee6;
-  --accent-strong: #0d2f25;
-  --warm: #ede7d7;
-  --shadow: 0 20px 50px rgba(23, 35, 28, 0.08);
+  --text: #07111f;
+  --muted: #526273;
+  --line: rgba(7, 17, 31, 0.1);
+  --accent: #12c7f5;
+  --accent-soft: #dff7ff;
+  --accent-strong: #06325a;
+  --electric: #1677ff;
+  --navy: #05111f;
+  --shadow: 0 22px 54px rgba(5, 17, 31, 0.1);
   --radius-xl: 28px;
   --radius-lg: 20px;
   --radius-md: 16px;
@@ -31,9 +32,9 @@ body {
   font-family: Inter, "Segoe UI", Arial, sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(196, 218, 209, 0.8), transparent 36%),
-    radial-gradient(circle at top right, rgba(239, 231, 210, 0.8), transparent 32%),
-    linear-gradient(180deg, #fbfcf8 0%, var(--bg) 100%);
+    radial-gradient(circle at top left, rgba(18, 199, 245, 0.28), transparent 34%),
+    radial-gradient(circle at top right, rgba(22, 119, 255, 0.18), transparent 32%),
+    linear-gradient(180deg, #fbfdff 0%, var(--bg) 100%);
 }
 
 a {
@@ -88,11 +89,14 @@ img {
   border-radius: 14px;
   display: grid;
   place-items: center;
-  background: linear-gradient(145deg, var(--accent), #2c7c63);
+  background:
+    radial-gradient(circle at 68% 24%, rgba(18, 199, 245, 0.85), transparent 28%),
+    linear-gradient(145deg, var(--navy), var(--accent-strong) 58%, var(--electric));
   color: #fff;
   font-size: 20px;
   font-weight: 800;
-  letter-spacing: -0.04em;
+  letter-spacing: 0;
+  box-shadow: 0 12px 26px rgba(18, 199, 245, 0.22);
 }
 
 .brand-copy strong,
@@ -100,7 +104,7 @@ img {
 .section h2,
 .card h3,
 .faq h3 {
-  letter-spacing: -0.04em;
+  letter-spacing: 0;
 }
 
 .brand-copy strong {
@@ -136,6 +140,8 @@ img {
 .nav a {
   padding: 10px 14px;
   font-size: 14px;
+  color: var(--accent-strong);
+  font-weight: 700;
 }
 
 .hero {
@@ -152,7 +158,7 @@ img {
   width: 280px;
   height: 280px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(23, 76, 60, 0.18), transparent 70%);
+  background: radial-gradient(circle, rgba(18, 199, 245, 0.24), transparent 70%);
   pointer-events: none;
 }
 
@@ -225,9 +231,10 @@ li {
   min-height: 48px;
   padding: 0 18px;
   border: 1px solid transparent;
-  background: var(--text);
+  background: linear-gradient(135deg, var(--navy), var(--electric));
   color: #fff;
   font-weight: 700;
+  box-shadow: 0 14px 28px rgba(22, 119, 255, 0.16);
 }
 
 .button.secondary {
@@ -239,7 +246,8 @@ li {
 .button.ghost {
   background: transparent;
   border-color: var(--line);
-  color: var(--text);
+  color: var(--accent-strong);
+  box-shadow: none;
 }
 
 .hero-panel,
@@ -382,7 +390,7 @@ li {
 .legal h3 {
   margin: 0 0 10px;
   font-size: 20px;
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
 }
 
 @media (max-width: 920px) {

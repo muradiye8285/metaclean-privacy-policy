@@ -1,13 +1,13 @@
 # Privacy Policy – MetaClean
 
-MetaClean is a privacy-focused iOS application designed to remove metadata from photos before sharing.
+MetaClean is a privacy-focused iOS application designed to remove metadata from photos and videos before sharing.
 
 ## Data Collection
 MetaClean does not collect, store, or transmit any personal data.
 
-## Photo Processing
-All photo processing happens locally on the user's device.
-Photos are never uploaded to any server.
+## Media Processing
+Photo and video processing happens locally on the user's device.
+Selected media is never uploaded to any server.
 
 ## Tracking & Analytics
 MetaClean does not use analytics, tracking, or third-party SDKs.
